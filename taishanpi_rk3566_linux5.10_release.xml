@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="rk" fetch="https://github.com/TaishanPi"/>
-  <default remote="rk" sync-j="8"/>
+  <remote name="origin" fetch="https://github.com/TaishanPi"/>
+  <default remote="origin" sync-j="8"/>
 
-  <project name="linux/debian" path="debian" revision="9971e4e19a356772f9446d104411c51941e418ac" clone-depth="1"/>
-  <project name="linux/device/rockchip" path="device/rockchip" revision="1c8f83421742270fdab3c2954fa766489a5e4dc2">
+  <project name="debian" path="debian" revision="9971e4e19a356772f9446d104411c51941e418ac" clone-depth="1"/>
+  <project name="device_rockchip" path="device/rockchip" revision="1c8f83421742270fdab3c2954fa766489a5e4dc2">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
