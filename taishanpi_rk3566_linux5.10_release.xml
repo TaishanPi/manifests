@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="rk" fetch="https://github.com/TaishanPi"/>
+  <default remote="rk" sync-j="8"/>
+
+  <project name="linux/debian" path="debian" revision="9971e4e19a356772f9446d104411c51941e418ac" clone-depth="1"/>
+  <project name="linux/device/rockchip" path="device/rockchip" revision="1c8f83421742270fdab3c2954fa766489a5e4dc2">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc"/>
+  <project name="kernel" path="kernel" revision="112f7e98c2c0b048727154ed582a59b507bd226c"/>
+  <project name="rkbin" path="rkbin" revision="13d2874ded7af754372d1b2c048ce7854f4fdf5f"/>
+  <project name="tools" path="tools" revision="cefe1b68c533206eb4470e114888e7941f83e369"/>
+  <project name="u-boot" path="u-boot" revision="6e378f44073480767188ec460c5e3a9b1dfc8b1a" clone-depth="1"/>
+</manifest>
