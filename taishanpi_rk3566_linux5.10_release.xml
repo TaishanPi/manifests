@@ -4,15 +4,15 @@
   <remote name="origin" fetch="git@github.com:TaishanPi"/>
   <default remote="origin" sync-j="4"/>
 
-  <project name="u-boot" path="u-boot" revision="6e378f44073480767188ec460c5e3a9b1dfc8b1a" clone-depth="1"/>
-  <project name="kernel" path="kernel" revision="112f7e98c2c0b048727154ed582a59b507bd226c" clone-depth="1"/>
-  <project name="rkbin" path="rkbin" revision="13d2874ded7af754372d1b2c048ce7854f4fdf5f" clone-depth="1"/>
-  <project name="tools" path="tools" revision="cefe1b68c533206eb4470e114888e7941f83e369" clone-depth="1"/>
-  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
-  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
-  <project name="rkwifibt" path="external/rkwifibt" revision="f4b13f7af66eaa023f942150fb3b1c6e79ddb90e" clone-depth="1"/>
-  <project name="debian" path="debian" revision="9971e4e19a356772f9446d104411c51941e418ac" clone-depth="1"/>
-  <project name="device_rockchip" path="device/rockchip" revision="1c8f83421742270fdab3c2954fa766489a5e4dc2" clone-depth="1">
+  <project name="u-boot" path="u-boot" revision="main"/>
+  <project name="kernel" path="kernel" revision="main"/>
+  <project name="rkbin" path="rkbin" revision="main"/>
+  <project name="tools" path="tools" revision="main"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="main"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="main"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="main"/>
+  <project name="debian" path="debian" revision="main"/>
+  <project name="device_rockchip" path="device/rockchip" revision="main">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
